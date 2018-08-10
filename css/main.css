@@ -12,7 +12,7 @@
     display: block;
     float: left;
     font-size: 0;
-    background: url(/dist/img/Logo.svg);
+    background: url(../img/Logo.svg);
     background-repeat: no-repeat;
     height: 35px;
     width: 180px;
