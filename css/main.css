@@ -120,7 +120,7 @@ p {
       margin-bottom: 1rem; }
 
 .home .hero-image {
-  background-image: url(/dist/img/hero.png);
+  background-image: url(../img/hero.png);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken; }
 
@@ -169,7 +169,7 @@ p {
     opacity: 0.5; }
 
 .contact .hero-image {
-  background-image: url(/dist/img/stefan-steinbauer-23268-unsplash.jpg);
+  background-image: url(../img/contact-hero.png);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   height: 50vh; }
