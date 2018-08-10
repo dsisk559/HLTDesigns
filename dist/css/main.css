@@ -1,0 +1,241 @@
+.topnav {
+  overflow: hidden;
+  background-color: #2e260d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+  .topnav .identity {
+    display: block;
+    float: left;
+    font-size: 0;
+    background: url(/dist/img/Logo.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 180px;
+    margin: 5px 16px; }
+  .topnav .menu {
+    float: right; }
+    .topnav .menu a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-size: 16px; }
+      .topnav .menu a:hover {
+        background-color: #d4b966;
+        color: black; }
+    .topnav .menu .active {
+      background-color: #f15a24;
+      color: white; }
+    .topnav .menu .icon {
+      display: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  margin-top: 40px;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.25ch; }
+
+p {
+  line-height: 1.25rem; }
+
+.lg-heading {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.85ch;
+  padding: 0.25rem 0;
+  margin: 1rem;
+  text-align: center; }
+
+.btn {
+  display: inline-block;
+  background: #f15a24;
+  width: 135px;
+  height: 35px;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.85ch;
+  border-radius: 5px;
+  padding: 5px; }
+  .btn:hover {
+    background: #f9b49c;
+    color: #000; }
+
+.hero-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 95vh;
+  z-index: 0; }
+  .hero-image .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 75vw; }
+    .hero-image .hero-text h1 {
+      display: inline-block;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.85ch;
+      padding: 0.25rem 0;
+      margin-bottom: 1rem;
+      border-bottom: 3px #f15a24 solid; }
+    .hero-image .hero-text p {
+      font-size: 2.5rem;
+      letter-spacing: 0.15ch;
+      line-height: 2.75rem;
+      margin-bottom: 1rem; }
+
+.home .hero-image {
+  background-image: url(/dist/img/hero.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken; }
+
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 1rem 1rem;
+  width: 100%; }
+  .projects .item {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .projects .item h2,
+    .projects .item p,
+    .projects .item .btn {
+      display: block;
+      padding: 1rem;
+      visibility: hidden;
+      position: absolute;
+      left: 0; }
+    .projects .item h2 {
+      top: 0; }
+    .projects .item p {
+      top: 150px;
+      font-weight: 700; }
+    .projects .item .btn {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      width: 154px;
+      bottom: 10px; }
+    .projects .item img {
+      object-fit: cover;
+      object-position: center;
+      height: auto;
+      width: 100%; }
+  .projects :hover h2,
+  .projects :hover p,
+  .projects :hover .btn {
+    visibility: visible; }
+  .projects :hover img {
+    opacity: 0.5; }
+
+.contact .hero-image {
+  background-image: url(/dist/img/stefan-steinbauer-23268-unsplash.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  height: 50vh; }
+
+.contact-form {
+  display: block;
+  width: 50vw;
+  margin: 0 auto 1rem; }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d4b966;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; }
+  .contact-form textarea {
+    height: 10rem; }
+  .contact-form input[type="submit"] {
+    border: none; }
+
+.contact-ty {
+  text-align: center;
+  padding-bottom: 2rem; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-top: 1px #2e260d solid; }
+
+@media screen and (min-width: 1400px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  .topnav .menu .nav-item {
+    display: none; }
+  .topnav .menu .icon {
+    float: right;
+    display: block; }
+  .identity.responsive {
+    display: none; }
+  .topnav.responsive {
+    position: fixed; }
+    .topnav.responsive .menu {
+      float: none; }
+      .topnav.responsive .menu .icon {
+        position: absolute;
+        right: 0;
+        top: 0; }
+      .topnav.responsive .menu .nav-item {
+        float: none;
+        display: block;
+        text-align: left; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); }
+  .contact-form {
+    width: 75vw; } }
+
+@media screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr; }
+  .contact-form {
+    width: 90vw; } }
